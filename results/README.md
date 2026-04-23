@@ -14,24 +14,16 @@ Typical columns include:
 
 | `time` | Time of cluster activation |
 
-| `cluster_id` | Identifier of the activated cluster |
-
 | `peak_ground_displacement` | Maximum ground displacement associated with the activation |
-
-| `station` | Station name or code, if available |
-
-| `component` | Seismic component, if available |
 
 ## Description
 
-Each row corresponds to one detected cluster activation. The activation time indicates when the cluster was observed, while the peak ground displacement represents the maximum displacement measured during the corresponding signal window.
+Each file corresponds to one detected cluster activation. The activation time indicates start of seismic window, and the peak ground displacement represents the maximum displacement measured.
 
 ## Notes
 
-- Time values should be interpreted in the timezone or reference system used during preprocessing.
+- Time values should be convert in the region timezone.
 
-- Peak ground displacement units should follow the processing convention used in the analysis, for example meters, millimeters, or counts if not converted.
-
-- Missing values indicate unavailable or unreliable measurements.
+- Peak ground displacement units ....
 
 ## Usage
